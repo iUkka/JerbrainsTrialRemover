@@ -1,7 +1,7 @@
 import os, fnmatch, shutil
 
 rootDir = os.getenv("HOME")
-pattern = ".PyCharm*"
+pattern = ".PyCharm*|.GoLang"
 
 for entry in os.listdir(rootDir):
     if fnmatch.fnmatch(entry, pattern):
